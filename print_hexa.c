@@ -13,10 +13,8 @@ int print_hex_lower(va_list vl)
 	int arr[128];
 
 	if (c == 0)
-	{
-		_putchar('0');
-		return (1);
-	}
+		return (_putchar('0'));
+
 	while (c != 0)
 	{
 		temp = c % 16;
@@ -45,10 +43,8 @@ int print_hex_upper(va_list vl)
 	int arr[128];
 
 	if (c == 0)
-	{
-		_putchar('0');
-		return (1);
-	}
+		return (_putchar('0'));
+
 	while (c != 0)
 	{
 		temp = c % 16;
@@ -79,10 +75,8 @@ int print_hex(unsigned long int c, int cap)
 	int arr[128];
 
 	if (c == 0)
-	{
-		_putchar('0');
-		return (1);
-	}
+		return (_putchar('0'));
+
 	while (c != 0)
 	{
 		temp = c % 16;
