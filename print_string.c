@@ -10,16 +10,13 @@ int print_string(va_list vl)
 {
 	int i;
 	char *s = va_arg(vl, char *);
+	char nl[] = "null";
 
-	if (s == NULL)
+	if (!s)
 	{
-		_putchar('(');
-		_putchar('n');
-		_putchar('u');
-		_putchar('l');
-		_putchar('l');
-		_putchar(')');
-		return (6);
+		for (i = 0; nl[i]; i++)
+		_putchar(nl[i]);
+		return (i);
 	}
 
 	for (i = 0; s[i]; i++)
