@@ -10,7 +10,7 @@ int print_string(va_list vl)
 {
 	int i;
 	char *s = va_arg(vl, char *);
-	char nl[] = "null";
+	char nl[] = "(null)";
 
 	if (!s)
 	{
