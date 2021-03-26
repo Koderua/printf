@@ -69,7 +69,7 @@ int print_hex_upper(va_list vl)
 /**
  * print_hex - print an address
  * @c: unsigned long int
- * cap: int
+ * @cap: int
  * Return: no return
  */
 
