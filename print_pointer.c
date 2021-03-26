@@ -10,17 +10,16 @@ int print_pointer(va_list vl)
 {
 	void *p = va_arg(vl, void*);
 	long int cast;
-	int a;
+	int a, i;
+	char nl[] = "(nil)";
 
-	if (p == NULL)
+	if (!p)
 	{
-		_putchar('(');
-		_putchar('n');
-		_putchar('i');
-		_putchar('l');
-		_putchar(')');
-		return (5);
+		for (i = 0; nl[i]; i++)
+		_putchar(nl[i]);
+		return (i);
 	}
+
 	cast = (unsigned long int)p;
 	_putchar('0');
 	_putchar('x');
