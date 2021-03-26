@@ -13,10 +13,7 @@ int print_binary(va_list vl)
 	int bin[128];
 
 	if (d == 0)
-	{
-		_putchar('0');
-		return (1);
-	}
+		return (_putchar('0'));
 
 	while (d > 0)
 		bin[i++] = d % 2,
